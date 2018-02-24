@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>m苏打</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://me.sodagreen.love/"/>
+  <updated>2018-02-24T09:08:06.680Z</updated>
+  <id>http://me.sodagreen.love/</id>
+  
+  <author>
+    <name>binbin Xie</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo搭建过程</title>
+    <link href="http://me.sodagreen.love/2018/02/24/other/hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
+    <id>http://me.sodagreen.love/2018/02/24/other/hexo搭建过程/</id>
+    <published>2018-02-24T08:50:59.000Z</published>
+    <updated>2018-02-24T09:08:06.680Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.准备工作</p><p>2.需要安装的依赖</p><p>3.运行</p><p>4.安装分享</p><p>5.安装统计</p><p>6.推送部署</p><p>7.安装cname</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.准备工作&lt;/p&gt;
+&lt;p&gt;2.需要安装的依赖&lt;/p&gt;
+&lt;p&gt;3.运行&lt;/p&gt;
+&lt;p&gt;4.安装分享&lt;/p&gt;
+&lt;p&gt;5.安装统计&lt;/p&gt;
+&lt;p&gt;6.推送部署&lt;/p&gt;
+&lt;p&gt;7.安装cname&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://me.sodagreen.love/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无助</title>
+    <link href="http://me.sodagreen.love/2018/02/23/%E6%97%A0%E5%8A%A9/"/>
+    <id>http://me.sodagreen.love/2018/02/23/无助/</id>
+    <published>2018-02-23T08:39:53.000Z</published>
+    <updated>2018-02-24T02:31:41.869Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="杂记" scheme="http://me.sodagreen.love/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>开始学习了</title>
+    <link href="http://me.sodagreen.love/2018/02/23/english/%E5%BC%80%E7%AB%AF/"/>
+    <id>http://me.sodagreen.love/2018/02/23/english/开端/</id>
+    <published>2018-02-23T08:39:53.000Z</published>
+    <updated>2018-02-24T03:36:27.808Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="语言学习" scheme="http://me.sodagreen.love/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>常用的命令</title>
+    <link href="http://me.sodagreen.love/2017/02/24/linux/%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
+    <id>http://me.sodagreen.love/2017/02/24/linux/常用的命令/</id>
+    <published>2017-02-24T03:34:16.000Z</published>
+    <updated>2018-02-24T03:36:19.026Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="linux" scheme="http://me.sodagreen.love/categories/linux/"/>
+    
+    
+      <category term="console" scheme="http://me.sodagreen.love/tags/console/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu_16.04LTS网卡设置记录</title>
+    <link href="http://me.sodagreen.love/2017/01/18/linux/ubuntu-16-04LTS%E7%BD%91%E5%8D%A1%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/"/>
+    <id>http://me.sodagreen.love/2017/01/18/linux/ubuntu-16-04LTS网卡设置记录/</id>
+    <published>2017-01-18T03:02:16.000Z</published>
+    <updated>2018-02-24T03:35:07.344Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig // 命令 指列出了lo网卡 没有eth0网卡。</span><br></pre></td></tr></table></figure></p><p>问题排查:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig -a // 列出所有网卡发现 enp0s3、lo两个网卡</span><br></pre></td></tr></table></figure></p><p>3.问题解决<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ifconfig enp0s3 up//开启网卡</span><br><span class="line"></span><br><span class="line">sudo dhclient enp0s3 //更新网卡ip地址</span><br></pre></td></tr></table></figure></p><p>编辑文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/network/interfaces</span><br><span class="line"></span><br><span class="line"># The loopback network interface (配置环回口)</span><br><span class="line"></span><br><span class="line">auto lo # 开机自动激lo接口</span><br><span class="line">iface lo inet loopback # 配置lo接口为环回口</span><br><span class="line"># The primary network interface #配置主网络接口</span><br><span class="line"></span><br><span class="line">auto eth0 #开机自动激活eth0接口</span><br><span class="line"></span><br><span class="line">iface eth0 inet dhcp #配置eth0接口为DHCP自动获取</span><br><span class="line"></span><br><span class="line">或者配置eth0为静态地址</span><br><span class="line"></span><br><span class="line"># The primary network interface (配置主网络接口)</span><br><span class="line"></span><br><span class="line">auto eth0 #开机自动激活eth0接口</span><br><span class="line"></span><br><span class="line">iface eth0 inet static #配置eth0接口为静态地址</span><br><span class="line"></span><br><span class="line">address 192.168.1.10</span><br><span class="line"></span><br><span class="line">gateway 192.168.1.254</span><br><span class="line"></span><br><span class="line">Netmask 255.255.255.0</span><br><span class="line"></span><br><span class="line">network 192.168.1.0</span><br><span class="line">broadcast 192.168.1.255</span><br></pre></td></tr></table></figure></p><p>重启网络服务</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo /etc/init.d/networking restart</span><br></pre></td></tr></table></figure><p>配置DNS<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#配置DNS服务器的地址，最多可以使用3个DNS服务器</span><br><span class="line"></span><br><span class="line">$sudo vim /etc/resolv.conf</span><br><span class="line"></span><br><span class="line">nameserver 202.96.134.133</span><br><span class="line">nameserver 202.96.128.68</span><br><span class="line">nameserver 202.96.128.166</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;问题描述:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;p
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="http://me.sodagreen.love/categories/linux/"/>
+    
+    
+      <category term="ubuntu" scheme="http://me.sodagreen.love/tags/ubuntu/"/>
+    
+  </entry>
+  
+</feed>
