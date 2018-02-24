@@ -34,7 +34,7 @@
   // Share
   $('body').on('click', function(){
     $('.article-share-box.on').removeClass('on');
-  }).on('click', '.article-share-link', function(e){
+  }).on('click', '.article-share-links', function(e){
     e.stopPropagation();
 
     var $this = $(this),
